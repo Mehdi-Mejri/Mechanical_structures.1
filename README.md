@@ -1,42 +1,40 @@
-# 📐 RDM Poutres - Bibliothèque Python pour l'Analyse des Structures
+📐 RDM Beams – Python Library for Structural Analysis
 
-Une bibliothèque Python complète pour l'analyse des poutres isostatiques en Résistance des Matériaux (RDM). Calcul des efforts internes, réactions d'appuis et tracé des diagrammes.
+A complete Python library for analyzing statically determinate beams in Strength of Materials (RDM).
+It computes internal forces, support reactions, and generates diagrams.
 
-## 🚀 Fonctionnalités
+🚀 Features
+📊 Supported Beam Types
 
-### 📊 Types de Poutres Supportés
+✅ Beams with two simple supports — Classical statically determinate beams
+✅ Cantilever beams — Fixed at the left or right end
+✅ Beams with simple support + roller — With overhang
 
-- ✅ **Poutres sur 2 appuis simples** - Isostatiques classiques
-- ✅ **Poutres encastrées** - Consoles (encastrement à gauche ou droite)
-- ✅ **Poutres avec appui simple + rouleau** - Avec porte-à-faux
+⚖️ Load Types
 
-### ⚖️ Types de Charges
+✅ Point loads — Vertical forces (positive downward)
+✅ Distributed loads — Uniform over a given interval
+✅ Concentrated moments — Couples (positive counterclockwise)
 
-- ✅ **Charges concentrées** - Forces verticales (positives vers le bas)
-- ✅ **Charges réparties** - Uniformes sur un intervalle
-- ✅ **Moments concentrés** - Couples (positifs anti-horaire)
+📈 Structural Calculations (RDM)
 
-### 📈 Calculs RDM
+✅ Support reactions — Automatically calculated
+✅ Shear force V(x) — Full diagram
+✅ Bending moment M(x) — Diagram with extrema
+✅ Axial force N(x) — For future extensions
 
-- ✅ **Réactions aux appuis** - Calcul automatique
-- ✅ **Effort tranchant V(x)** - Diagramme complet
-- ✅ **Moment fléchissant M(x)** - Diagramme avec extrema
-- ✅ **Effort normal N(x)** - Pour extensions futures
+🎨 Visualization
 
-### 🎨 Visualisation
+✅ Professional diagrams — Using matplotlib
+✅ Beam and loads — Graphical representation
+✅ Key points — Zeros and extrema identified
+✅ CSV export
 
-- ✅ **Diagrammes professionnels** - Avec matplotlib
-- ✅ **Poutre et charges** - Représentation graphique
-- ✅ **Points particuliers** - Zéros et extrema identifiés
-- ✅ **Export d'images** - PNG, PDF, JPG
+Prerequisites
 
-### Prérequis
+Python 3.7 or higher
 
-- Python 3.7 ou supérieur
-- pip (gestionnaire de packages Python)
+pip (Python package manager)
 
-### Installation des Dépendances
-
-```bash
+Installing Dependencies
 pip install numpy matplotlib
-```
