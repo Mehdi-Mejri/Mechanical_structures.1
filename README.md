@@ -1,42 +1,39 @@
-# 📐 RDM Poutres - Bibliothèque Python pour l'Analyse des Structures
+# 📐 RDM Beams – Python Library for Structural Analysis
 
-Une bibliothèque Python complète pour l'analyse des poutres isostatiques en Résistance des Matériaux (RDM). Calcul des efforts internes, réactions d'appuis et tracé des diagrammes.
+A complete Python library for analyzing statically determinate beams in Strength of Materials (RDM). It computes internal forces, support reactions, and generates professional diagrams.
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-### 📊 Types de Poutres Supportés
+### 📊 Supported Beam Types
+- ✅ **Beams with two simple supports** — Classical statically determinate beams
+- ✅ **Cantilever beams** — Fixed at the left or right end
+- ✅ **Beams with simple support + roller** — With overhang
 
-- ✅ **Poutres sur 2 appuis simples** - Isostatiques classiques
-- ✅ **Poutres encastrées** - Consoles (encastrement à gauche ou droite)
-- ✅ **Poutres avec appui simple + rouleau** - Avec porte-à-faux
+### ⚖️ Load Types
+- ✅ **Point loads** — Vertical forces (positive downward)
+- ✅ **Distributed loads** — Uniform over a given interval
+- ✅ **Concentrated moments** — Couples (positive counterclockwise)
 
-### ⚖️ Types de Charges
+### 📈 Structural Calculations (RDM)
+- ✅ **Support reactions** — Automatically calculated
+- ✅ **Shear force V(x)** — Full diagram with critical values
+- ✅ **Bending moment M(x)** — Diagram with extrema identification
+- ✅ **Axial force N(x)** — Ready for future extensions
 
-- ✅ **Charges concentrées** - Forces verticales (positives vers le bas)
-- ✅ **Charges réparties** - Uniformes sur un intervalle
-- ✅ **Moments concentrés** - Couples (positifs anti-horaire)
+### 🎨 Visualization
+- ✅ **Professional diagrams** — Using matplotlib for high-quality output
+- ✅ **Beam and loads** — Graphical representation of the structural system
+- ✅ **Key points** — Zeros and extrema automatically identified
+- ✅ **CSV export** — Export results for further analysis
 
-### 📈 Calculs RDM
+## 📋 Prerequisites
 
-- ✅ **Réactions aux appuis** - Calcul automatique
-- ✅ **Effort tranchant V(x)** - Diagramme complet
-- ✅ **Moment fléchissant M(x)** - Diagramme avec extrema
-- ✅ **Effort normal N(x)** - Pour extensions futures
+- Python 3.7 or higher
+- pip (Python package manager)
 
-### 🎨 Visualisation
+## 🔧 Installation
 
-- ✅ **Diagrammes professionnels** - Avec matplotlib
-- ✅ **Poutre et charges** - Représentation graphique
-- ✅ **Points particuliers** - Zéros et extrema identifiés
-- ✅ **Export d'images** - PNG, PDF, JPG
-
-### Prérequis
-
-- Python 3.7 ou supérieur
-- pip (gestionnaire de packages Python)
-
-### Installation des Dépendances
-
+1. Clone the repository:
 ```bash
-pip install numpy matplotlib
-```
+git clone https://github.com/yourusername/rdm-beams.git
+cd rdm-beams
